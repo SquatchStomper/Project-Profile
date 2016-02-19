@@ -10,7 +10,10 @@ body {
   font-family: 'Architects Daughter', sans-serif;
   color: #222;
   background: #511;
- 
+  background-image: url('../img/S5 pics 005.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /* Link Styles */
 
@@ -55,6 +58,9 @@ a:hover {
 .nav a:hover {
   color: white
 }
+.selected {
+  color: lightgreen;
+}
 
 header {
   text-align: center;
@@ -74,10 +80,10 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.4) rotate(5deg);
+  border: 10px groove #6633ff;
 }
 .tag {
-  background-color: #efefef;
   color: black;
   padding: 10px;
   border-radius: 5px;
@@ -85,8 +91,7 @@ header .profile-image:hover {
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  color: blue;
 }
 .card {
   margin: 30px;
@@ -94,12 +99,14 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 8px solid lightgreen;
   border-radius: 6px;
+  border-style: groove;
   transition: all .5s;
+  opacity: .9;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #6633ff;
 }
 
 ul.skills {
@@ -122,13 +129,21 @@ ul.skills {
 
 footer {
   width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 20px 0 20px 20px;
+  max-height: 100px;
 }
 
 footer .copyright {
+  color: #f4f4f4;
   top: -8px;
   font-size: .75em;
+  
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
 }
 
 footer ul {
@@ -148,7 +163,7 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: 1;
   transition: all .5s;
 }
 a.twitter {
