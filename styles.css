@@ -58,7 +58,6 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('img/famfie.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -153,13 +152,10 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(img/twitter.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(img/github.svg);
 }
 a.social:hover {
   opacity: 1;
@@ -200,7 +196,7 @@ a.social:hover {
 
   footer {
     font-size: 1.3em;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 40px auto;
   }
 
